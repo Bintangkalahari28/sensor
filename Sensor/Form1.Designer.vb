@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -38,7 +38,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Lblketerangan = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,7 +47,7 @@ Partial Class Form1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(145, 18)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(149, 24)
         Me.ComboBox1.TabIndex = 0
@@ -55,7 +55,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(324, 18)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(188, 37)
         Me.Button1.TabIndex = 1
@@ -65,7 +65,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(324, 63)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(188, 37)
         Me.Button2.TabIndex = 2
@@ -75,7 +75,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(324, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(188, 37)
         Me.Button3.TabIndex = 3
@@ -84,12 +84,12 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend3)
+        ChartArea7.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea7)
+        Legend7.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend7)
         Me.Chart1.Location = New System.Drawing.Point(4, 316)
-        Me.Chart1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Chart1.Margin = New System.Windows.Forms.Padding(4)
         Me.Chart1.Name = "Chart1"
         Me.Chart1.Size = New System.Drawing.Size(781, 215)
         Me.Chart1.TabIndex = 4
@@ -98,7 +98,7 @@ Partial Class Form1
         'RichTextBox1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(145, 52)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(149, 125)
         Me.RichTextBox1.TabIndex = 5
@@ -107,10 +107,13 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(145, 185)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(149, 22)
         Me.TextBox1.TabIndex = 6
+        '
+        'Timer1
+        '
         '
         'Label1
         '
@@ -152,25 +155,25 @@ Partial Class Form1
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Chart"
         '
-        'Label5
+        'Lblketerangan
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(520, 28)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 17)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Status :"
+        Me.Lblketerangan.AutoSize = True
+        Me.Lblketerangan.Location = New System.Drawing.Point(580, 28)
+        Me.Lblketerangan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lblketerangan.Name = "Lblketerangan"
+        Me.Lblketerangan.Size = New System.Drawing.Size(52, 17)
+        Me.Lblketerangan.TabIndex = 11
+        Me.Lblketerangan.Text = "Status "
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(584, 28)
+        Me.Label6.Location = New System.Drawing.Point(520, 28)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 17)
+        Me.Label6.Size = New System.Drawing.Size(56, 17)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Status "
+        Me.Label6.Text = "Status :"
         '
         'Form1
         '
@@ -178,7 +181,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 546)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Lblketerangan)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -190,7 +193,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -212,6 +215,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
-    Friend WithEvents Label5 As Label
+    Friend WithEvents Lblketerangan As Label
     Friend WithEvents Label6 As Label
 End Class
